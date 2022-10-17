@@ -517,25 +517,15 @@ form #btnForm:hover{
 }
 
 
-#fotos02 #revistaLarga img{
-    width: 360px;
+#fotos02  img{
+    width: 480px;
     margin: 10px;
     cursor: pointer;
-    transition: all 1s;
-}
-#fotos02 #revistaLarga img:hover{
-    width: 380px;
     transition: all 1s;
 }
 
-#fotos02 #revistaViabat img{
-    width: 330px;
-    margin: 10px;
-    cursor: pointer;
-    transition: all 1s;
-}
-#fotos02 #revistaViabat img:hover{
-    width: 350px;
+#fotos02  img:hover{
+    width: 500px;
     cursor: pointer;
     transition: all 1s;
 }
