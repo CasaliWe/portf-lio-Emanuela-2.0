@@ -472,7 +472,6 @@ form #btnForm:hover{
 
 #fotos01 p img{
     width: 230px;
-    height: 230px;
     margin: 10px;
     transition: all 1s;
     border-radius: 5px;
@@ -481,7 +480,6 @@ form #btnForm:hover{
 #fotos01 p img:hover{
     cursor: pointer;
     width: 250px;
-    height: 250px;
     transition: all 1s;
 }
 
@@ -510,26 +508,40 @@ form #btnForm:hover{
 }
 
 #fotos02 div{
-   padding: 20px;
-   margin: 0 auto;
-   text-align: center;
-   width: 80%;
-   height: 450px;
-   overflow: auto;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    height: 450px;
+    overflow: auto;
 }
 
-#fotos02 div img{
-    width: 500px;
-    transition: all 1s;
-    margin: 20px;
-    border-radius: 10px;
-}
 
-#fotos02 div img:hover{
-    width: 530px;
-    transition: all 1s;
+#fotos02 #revistaLarga img{
+    width: 360px;
+    margin: 10px;
     cursor: pointer;
+    transition: all 1s;
 }
+#fotos02 #revistaLarga img:hover{
+    width: 380px;
+    transition: all 1s;
+}
+
+#fotos02 #revistaViabat img{
+    width: 330px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+#fotos02 #revistaViabat img:hover{
+    width: 350px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+
 
 
 
@@ -559,7 +571,6 @@ form #btnForm:hover{
 
 #fotos03 p img{
     width: 230px;
-    height: 230px;
     margin: 10px;
     transition: all 1s;
     border-radius: 5px;
@@ -568,7 +579,6 @@ form #btnForm:hover{
 #fotos03 p img:hover{
     cursor: pointer;
     width: 250px;
-    height: 250px;
     transition: all 1s;
 }
 
@@ -610,7 +620,6 @@ form #btnForm:hover{
 
 #fotos04 p img{
     width: 230px;
-    height: 230px;
     margin: 10px;
     transition: all 1s;
     border-radius: 5px;
@@ -618,7 +627,6 @@ form #btnForm:hover{
 
 #fotos04 p img:hover{
     cursor: pointer;
-    width: 250px;
-    height: 250px;
+    width: 240px;
     transition: all 1s;
 }
