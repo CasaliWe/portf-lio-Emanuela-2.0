@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Emanuela da Rosa</title>
+</head>
+<body>
+    
+     
+     <div id="menu">
+           <span onclick="irParaHome()" id="home"><i class="fas fa-home"></i></span>
+           <span onclick="irParaProjetos()" id="projetos"><i class="fas fa-briefcase"></i></span>
+           <span onclick="irParaContato()" id="contato"><i class="fas fa-envelope"></i></span>
+     </div>
+
+
+     <div id="conteudoHome">
+                
+            <div id="imgHome">
+                 <div></div>
+
+                 <img src="img/Manu.jpeg" alt="Emanuela">
+            </div>
+
+            <div id="txtHome">
+                    <div>
+                        <h1>Eu sou <span id="nome">Emanuela da Rosa</span></h1>
+                        <p id="descri">Formada em Design Gráfico e apaixonada por criação, com a abrangência que o design possui, me arrisquei na criação de conteúdo digital, campanhas internas e externas, gerenciamento de ações comerciais, impulsionamento de vendas e criação de artes.</p>
+                        <button onclick="irParaProjetos()">Projetos</button>
+                    </div>
+            </div>
+
+     </div>
+
+
+
+
+
+    <div id="conteudoProjetos">
+            <div id="p1">
+                <h1>PROJETOS</h1>
+                <p>Os projetos que serão apresentados a seguir foram desenvolvidos em programas como Adobe Photoshop, Illustrator e Indesign. Desse modo, foi possível aplicar as técnicas necessárias em cada proposta, proporcionando maior liberdade na criação e composição dos elementos.</p>
+            </div>
+
+            <div id="p2">
+                 <div id="area1">
+                         <h1 onclick="projeto01()">01.</h1>
+                         <h4>SOCIAL MEDIA</h4>
+                 </div>
+                 
+                 <div id="area2">
+                         <h1 onclick="projeto02()">02.</h1>
+                         <h4>EDITORIAL</h4>
+                 </div>
+                 
+                 <div id="area3">
+                         <h1 onclick="projeto03()">03.</h1>
+                         <h4>IDENT. VISUAL</h4>
+                 </div>
+                 
+                 <div id="area4">
+                         <h1 onclick="projeto04()">04.</h1>
+                         <h4>FACHADAS</h4>
+                 </div>
+            </div>
+    </div>
+
+
+
+
+
+
+     <div id="conteudoContato">
+           <h1>Meus <span>contatos</span></h1>
+
+           <h2>CONTATOS</h2>
+
+           <div id="contatosPai">
+                  
+                 <div id="linksUteis">
+                        <h3>Fale comigo</h3>
+
+                        <div>
+                            <p><i class="fas fa-id-card"></i> NOME: Emanuela da Rosa</p>
+                            <p><i class="fas fa-home"></i> CIDADE: Passo Fundo, RS</p>
+                            <p><i class="fas fa-envelope"></i> E-MAIL: emanuelasdrds@hotmail.com</p>
+                        </div>
+
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=5554991335430&text=Ol%C3%A1%2C%20preciso%20de%20uma%20Designer!"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/mannu.psd/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/emanuela-da-rosa-810897173"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                 </div>
+                
+                 <div id="formContato">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+     
+                        <input type="hidden" name="accessKey" value="4398c799-237d-488f-9644-44b5616fb180">
+                              <input type="text" name="name" placeholder="Nome"> <br>
+                              <input type="email" name="email" placeholder="Email"> <br>
+                              <input type="text" name="phone" placeholder="Celular"> <br>
+                              <textarea name="message" placeholder="Assunto"></textarea> <br>
+                              <input type="submit" value="Enviar" id="btnForm">
+                  
+                        <input type="hidden" name="redirectTo" value="https://portfolioemanuela.netlify.app/">
+                   
+                    </form>
+                 </div>
+                 
+           </div>
+
+     </div>
+
+
+
+
+
+
+    
+    <div id="fotos01">
+          <h1>SOCIAL MEDIA</h1>
+          
+          <div>
+               <p>
+                    <img src="img/social-media/viabat3.jpg" alt="">
+                    <img src="img/social-media/viabat4.jpg" alt="">
+               </p>
+
+               <p>
+                   <img src="img/social-media/viabat5.jpg" alt="">
+                   <img src="img/social-media/viabat6.jpg" alt="">
+               </p>
+
+               <p>
+                  <img src="img/social-media/viabat1.jpg" alt="">
+                  <img src="img/social-media/viabat2.jpg" alt="">
+              </p>
+          </div>
+
+          <p onclick="back()" class="back"><i class="fas fa-backward"></i></p>
+    </div>
+
+    <div id="fotos02">
+           <h1>EDITORIAL</h1>
+
+           <div>
+              <img src="img/editorial/revista1.jpg" alt="">
+              <img src="img/editorial/revista2.jpg" alt="">
+           </div>
+
+           <p onclick="back()" class="back"><i class="fas fa-backward"></i></p>
+    </div>
+
+    <div id="fotos03">
+        <h1>IDENTIDADE VISUAL</h1>
+
+        <div>
+              <p>
+                   <img src="img/identidade-visual/drummer1.jpg" alt="">
+                   <img src="img/identidade-visual/drummer2.png" alt="">
+              </p>
+
+              <p>
+                   <img src="img/identidade-visual/esaro1.png" alt="">
+                   <img src="img/identidade-visual/esaro2.png" alt="">
+              </p>
+
+              <p>
+                   <img src="/img/identidade-visual/jbs1.png" alt="">
+                   <img src="/img/identidade-visual/jbs2.png" alt="">
+              </p>
+
+              <p>
+                  <img src="img/identidade-visual/old1.png" alt="">
+                  <img src="img/identidade-visual/old2.png" alt="">
+              </p>
+
+              <p>
+                   <img src="/img/identidade-visual/old3.png" alt="">
+                   <img src="/img/identidade-visual/old4.png" alt="">
+              </p>
+        </div>
+
+        <p onclick="back()" class="back"><i class="fas fa-backward"></i></p>
+    </div>
+
+    <div id="fotos04">
+        <h1>FACHADAS</h1>
+
+        <div>
+              <p>
+                   <img src="img/fachadas/rua1a.jpeg" alt="">
+                   <img src="img/fachadas/rua2a.jpeg" alt="">
+              </p>
+
+              <p>
+                   <img src="img/fachadas/rua1b.jpeg" alt="">
+                   <img src="img/fachadas/rua2b.jpeg" alt="">
+              </p>
+        </div>
+
+        <p onclick="back()" class="back"><i class="fas fa-backward"></i></p>
+    </div>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
