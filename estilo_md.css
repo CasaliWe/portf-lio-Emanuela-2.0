@@ -1,6 +1,6 @@
 @media (max-width: 850px) {
         body{
-            background-color: rgba(0, 0, 0, 0.932);
+            background-color: var(--cor4);
             color: var(--cor2);
             overflow: hidden;
             font-family: 'Montserrat', sans-serif;
@@ -12,6 +12,7 @@
            --cor1: orangered;
            --cor2: white;
            --cor3: #2B292B;
+           --cor4: rgba(0, 0, 0, 0.932);
         }
         
         
@@ -84,7 +85,7 @@
         }
         
         #imgHome div{
-           width: 30px;
+           width: 10px;
            height: 100%;
            background-color: var(--cor1);
            position: absolute;

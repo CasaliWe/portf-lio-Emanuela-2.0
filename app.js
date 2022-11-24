@@ -2,16 +2,22 @@
 var trocaCor = 0
 function trocarCor(){
      if(trocaCor == 0){
-          document.body.style.setProperty('--cor1', 'green');
+          document.body.style.setProperty('--cor1', 'orangered');
+          document.body.style.setProperty('--cor2', 'rgba(0, 0, 0, 0.932)');
+          document.body.style.setProperty('--cor3', 'white');
+          document.body.style.setProperty('--cor4', 'white');
           trocaCor = 1
      } else if(trocaCor == 1){
-          document.body.style.setProperty('--cor1', 'blue');
+          document.body.style.setProperty('--cor1', '#2B292B');
+          document.body.style.setProperty('--cor2', 'orangered');
+          document.body.style.setProperty('--cor3', 'rgba(0, 0, 0, 0.932)');
+          document.body.style.setProperty('--cor4', 'white');
           trocaCor = 2
      } else if(trocaCor == 2){
-          document.body.style.setProperty('--cor1', 'red');
-          trocaCor = 3
-     } else if(trocaCor == 3){
           document.body.style.setProperty('--cor1', 'orangered');
+          document.body.style.setProperty('--cor2', 'white');
+          document.body.style.setProperty('--cor3', '#2B292B');
+          document.body.style.setProperty('--cor4', 'rgba(0, 0, 0, 0.932)');
           trocaCor = 0
      }
 }

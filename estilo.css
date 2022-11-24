@@ -12,7 +12,7 @@
 
 
 body{
-     background-color: rgba(0, 0, 0, 0.932);
+     background-color: var(--cor4);
      color: var(--cor2);
      overflow: hidden;
      font-family: 'Montserrat', sans-serif;
@@ -24,7 +24,8 @@ body{
     --cor1: orangered;
     --cor2: white;
     --cor3: #2B292B;
-}
+    --cor4: rgba(0, 0, 0, 0.932);
+ }
 
 
 .sai{
