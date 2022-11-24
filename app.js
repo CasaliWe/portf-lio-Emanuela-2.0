@@ -1,3 +1,20 @@
+//Trocar cor background
+var trocaCor = 0
+function trocarCor(){
+     if(trocaCor == 0){
+          document.body.style.setProperty('--cor1', 'green');
+          trocaCor = 1
+     } else if(trocaCor == 1){
+          document.body.style.setProperty('--cor1', 'blue');
+          trocaCor = 2
+     } else if(trocaCor == 2){
+          document.body.style.setProperty('--cor1', 'red');
+          trocaCor = 3
+     } else if(trocaCor == 3){
+          document.body.style.setProperty('--cor1', 'orangered');
+          trocaCor = 0
+     }
+}
 
 
 //Chamar conteúdo HOME

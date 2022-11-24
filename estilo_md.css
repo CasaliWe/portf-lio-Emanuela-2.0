@@ -1,0 +1,626 @@
+@media (max-width: 850px) {
+        body{
+            background-color: rgba(0, 0, 0, 0.932);
+            color: var(--cor2);
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        
+        
+        :root {
+           --cor1: orangered;
+           --cor2: white;
+           --cor3: #2B292B;
+        }
+        
+        
+     
+        /*--------------------- MENU ICONES -----------------*/
+        
+        #menu{
+            position: fixed;
+            right: 5px;
+            height: 100vh;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #menu #trocarCor{
+           color: var(--cor1);
+           cursor: pointer;
+           position: absolute;
+           top: 40px;
+           right: 15px;
+           font-size: 25px;
+        }
+        
+        #menu span{
+            margin: 10px 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:  var(--cor3);
+            color: var(--cor2);
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        #menu span:hover{
+           background-color:  var(--cor1);
+           transition: all 500ms;
+        }
+        
+        /*COR DA ABA SELECIONADA*/
+        #menu #home{
+           background-color:  var(--cor1);
+        }
+        
+        
+        
+        
+        
+        
+        /*---------------- HOME -----------------*/
+        
+        #conteudoHome{
+             width: 90%;
+             height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        
+        
+        #imgHome{
+            width: 40px;
+            height: 100%;
+            position: relative;
+        }
+        
+        #imgHome div{
+           width: 30px;
+           height: 100%;
+           background-color: var(--cor1);
+           position: absolute;
+        }
+        
+        #imgHome img{
+           width: 85%;
+           margin: 15px;
+           border-radius: 30px;
+           position: absolute;
+           z-index: 2;
+           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.434);
+           display: none;
+        }
+        
+        
+        
+        
+        
+        
+        #txtHome{
+           width: 95%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        
+        #txtHome div{
+           width: 90%;
+        }
+        
+        #txtHome div h1{
+              font-size: 26px;
+              margin: 2px 10px 10px 10px;
+        }
+        
+        #txtHome div h1 #nome{
+           color: var(--cor1);
+        }
+        
+        #txtHome div #descri{
+              font-size: 20px;
+              margin: 10px;
+              width: 90%;
+        }
+        
+        #txtHome div button{
+           border-radius: 20px;
+           padding: 5px 12px;
+           font-size: 20px;
+           color: var(--cor2);
+           background-color: var(--cor1);
+           border: 1px solid transparent;
+           margin: 10px;
+           cursor: pointer;
+        }
+        
+        #txtHome div button:hover{
+           background-color: transparent;
+           border: 1px solid var(--cor1);
+           color: var(--cor1);
+           transition: all 500ms;
+        }
+        
+        
+        
+        
+        
+        
+        /*---------------- PROJETOS -----------------*/
+        
+        #conteudoProjetos{
+               width: 90%;
+               height: 100vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               overflow: scroll;
+               display: none;
+        }
+        
+        #conteudoProjetos #p1{
+              width: 95%;
+              height: 40%;
+              margin: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              padding: 10px;
+              display: none;
+        }
+        
+        #conteudoProjetos #p1 h1{
+           color: var(--cor1);
+           margin-bottom: 10px;
+           font-size: 23px;
+           border: 1px solid red;
+        }
+        
+        #conteudoProjetos #p1 p{
+           width: 85%;
+           font-size: 16px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #conteudoProjetos #p2{
+             width: 85%;
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+        }
+        
+        #conteudoProjetos #p2 #area1, #area3{
+            width: 70%;
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        #conteudoProjetos #p2 #area1 h1, #area3 h1{
+               color: var(--cor1);
+               font-size: 45px;
+        }
+        
+        #conteudoProjetos #p2 #area1 h1:hover, #area3 h1:hover{
+           color: var(--cor3);
+           transform: scale(1.1);
+           transition: all 400ms;
+           cursor: pointer;
+        }
+        
+        
+        
+        
+        #conteudoProjetos #p2 #area2, #area4{
+           width: 70%;
+           margin: 10px;
+           text-align: end;
+           padding: 5px;
+        }
+        
+        #conteudoProjetos #p2 #area2 h1, #area4 h1{
+           color: var(--cor1);
+           font-size: 45px;
+        }
+        
+        #conteudoProjetos #p2 #area2 h1:hover, #area4 h1:hover{
+           color: var(--cor3);
+           transform: scale(1.1);
+           transition: all 400ms;
+           cursor: pointer;
+        }
+        
+        
+        #titleMobile{
+                display: block;
+                position: fixed;
+                top: 70px;
+                color: var(--cor1);
+        }
+        
+        
+        
+        
+        
+        /*---------------- CONTATO -----------------*/
+        
+        #conteudoContato{
+         width: 90%;
+         height: 100vh;
+         text-align: center;
+         display: none;
+        }
+
+        /*---------------------NOVA PAGINA DE CONTATO MOBILE ---------------------*/
+        #contatoMobile{
+              display: block;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+        }
+        
+
+
+
+
+        #conteudoContato h1{
+           width: 85%;
+           margin: 0 auto;
+           text-align: center;
+           font-size: 30px;
+           color: var(--cor2);
+           position: absolute;
+           top: 33px;
+           z-index: 4;
+           display: none;
+        }
+        
+        #conteudoContato h1 span{
+           color: var(--cor1);
+        }
+        
+        #conteudoContato h2{
+           width: 85%;
+           text-align: center;
+           font-size: 45px;
+           color: var(--cor3);
+           position: absolute;
+           top: 30px;
+           z-index: 3;
+           display: none;
+        }
+        
+        
+        #contatosPai{
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              display: none;
+        }
+        
+        
+        #linksMobile{
+              width: 95%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin: 30px 0px;
+        }
+        
+        #linksMobile h3{
+           color: var(--cor2);
+           font-size: 25px;
+           margin-bottom: 3px;
+        }
+
+        #linksMobile div{
+            text-align: start;
+         }
+        
+        
+        #linksMobile div p{
+           margin: 5px;
+           font-size: 13px;
+        }
+        
+        #linksMobile div i{
+           color: var(--cor1);
+           font-size: 22px;
+           margin: 5px;
+        }
+        
+        #linksMobile div i:hover{
+           color: var(--cor3);
+           transition: all 400ms;
+        }
+        
+        #linksMobile a{
+           text-decoration: none;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        #formContatoMobile{
+             width: 95%;
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+        }
+
+        #contatoMobile form{
+             width: 95%;
+        }
+        
+        form input {
+              border: 1px solid transparent;
+              border-radius: 10px;
+              padding: 5px;
+              width: 80%;
+              margin: 5px;
+              background-color: var(--cor3);
+              color: var(--cor1);
+        }
+        
+        form textarea {
+           border: 1px solid transparent;
+           border-radius: 10px;
+           height: 100px;
+           padding: 5px;
+           width: 80%;
+           margin: 5px;
+           background-color: var(--cor3);
+           color: var(--cor1);
+        }
+        
+        form #btnFormMobile{
+             color: white;
+             background-color: var(--cor1);
+             padding: 5px 10px;
+             width: 50%;
+             cursor: pointer;
+        }
+        
+        form #btnForm:hover{
+           color: var(--cor1);
+           border: 1px solid var(--cor1);
+           background-color: transparent;
+           transition: all 500ms;
+        }
+
+        #contatoMobile h1{
+                display: block;
+                color: var(--cor1);
+        }
+
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        /*----------------------- PROJETOS IMAGENS -------------------*/
+        
+        .back{
+           position: fixed;
+           top: 20px;
+           left: 20px;
+           font-size: 25px;
+           color: var(--cor2);
+           cursor: pointer;
+        }
+        
+        .back:hover{
+           color: var(--cor1);
+        }
+        
+        
+        
+        #fotos01{
+               height: 100vh;
+               padding: 80px 30px;
+               text-align: center;
+               display: none;
+        }
+        
+        #fotos01 h1{
+            color: var(--cor1);
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        #fotos01 div{
+           padding: 10px;
+           margin: 0 auto;
+           width: 90%;
+           text-align: center;
+           height: 550px;
+           overflow: auto;
+        }
+        
+        #fotos01 p img{
+           width: 200px;
+           margin: 10px;
+           transition: all 1s;
+           border-radius: 5px;
+        }
+        
+        #fotos01 p img:hover{
+           cursor: pointer;
+           width: 210px;
+           transition: all 1s;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #fotos02{
+           height: 100vh;
+           padding: 80px 30px;
+           text-align: center;
+           display: none;
+        }
+        
+        #fotos02 h1{
+           color: var(--cor1);
+           margin-bottom: 20px;
+           font-size: 20px;
+        }
+        
+        #fotos02 div{
+           padding: 10px;
+           margin: 0 auto;
+           width: 90%;
+           text-align: center;
+           height: 550px;
+           overflow: auto;
+        }
+        
+        
+        #fotos02  img{
+           width: 240px;
+           margin: 5px;
+           cursor: pointer;
+           transition: all 1s;
+        }
+        
+        #fotos02  img:hover{
+           width: 250px;
+           cursor: pointer;
+           transition: all 1s;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #fotos03{
+           height: 100vh;
+           padding: 80px 30px;
+           text-align: center;
+           display: none;
+        }
+        
+        #fotos03 h1{
+           color: var(--cor1);
+           margin-bottom: 10px;
+           font-size: 20px;
+        }
+        
+        #fotos03 div{
+           padding: 10px;
+           margin: 0 auto;
+           width: 90%;
+           text-align: center;
+           height: 550px;
+           overflow: auto;
+        }
+        
+        #fotos03 p img{
+           width: 210px;
+           margin: 5px;
+           transition: all 1s;
+           border-radius: 5px;
+        }
+        
+        #fotos03 p img:hover{
+           cursor: pointer;
+           width: 220px;
+           transition: all 1s;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #fotos04{
+           height: 100vh;
+           padding: 80px 30px;
+           text-align: center;
+           display: none;
+        }
+        
+        #fotos04 h1{
+           color: var(--cor1);
+           margin-bottom: 10px;
+           font-size: 20px;
+        }
+        
+        
+        #fotos04 div{
+           padding: 10px;
+           margin: 0 auto;
+           width: 90%;
+           text-align: center;
+           height: 550px;
+           overflow: auto;
+        }
+        
+        #fotos04 p img{
+           width: 220px;
+           margin: 5px;
+           transition: all 1s;
+           border-radius: 5px;
+        }
+        
+        #fotos04 p img:hover{
+           cursor: pointer;
+           width: 230px;
+           transition: all 1s;
+        }
+        
+}

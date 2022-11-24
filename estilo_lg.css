@@ -1,0 +1,582 @@
+@media (max-width: 1100px) {
+   
+    body{
+        background-color: rgba(0, 0, 0, 0.932);
+        color: var(--cor2);
+        overflow: hidden;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    
+    
+    :root {
+       --cor1: orangered;
+       --cor2: white;
+       --cor3: #2B292B;
+    }
+    
+    
+ 
+    /*--------------------- MENU ICONES -----------------*/
+    
+    #menu{
+        position: fixed;
+        right: 12px;
+        height: 100vh;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #menu #trocarCor{
+       color: var(--cor1);
+       cursor: pointer;
+       position: absolute;
+       top: 30px;
+       right: 35px;
+       font-size: 30px;
+    }
+    
+    #menu span{
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  var(--cor3);
+        color: var(--cor2);
+        cursor: pointer;
+    }
+    
+    #menu span:hover{
+       background-color:  var(--cor1);
+       transition: all 500ms;
+    }
+    
+    /*COR DA ABA SELECIONADA*/
+    #menu #home{
+       background-color:  var(--cor1);
+    }
+    
+    
+    
+    
+    
+    
+    /*---------------- HOME -----------------*/
+    
+    #conteudoHome{
+         width: 90%;
+         height: 100vh;
+         overflow: hidden;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    
+    
+    #imgHome{
+        width: 40%;
+        height: 100%;
+        position: relative;
+    }
+    
+    #imgHome div{
+       width: 180px;
+       height: 100%;
+       background-color: var(--cor1);
+       position: absolute;
+    }
+    
+    #imgHome img{
+       width: 85%;
+       margin: 15px;
+       border-radius: 30px;
+       position: absolute;
+       z-index: 2;
+       box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.434);
+    }
+    
+    
+    
+    
+    
+    
+    #txtHome{
+       width: 65%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+    }
+    
+    #txtHome div{
+       width: 90%;
+    }
+    
+    #txtHome div h1{
+          font-size: 35px;
+          margin: 2px 10px 10px 10px;
+    }
+    
+    #txtHome div h1 #nome{
+       color: var(--cor1);
+    }
+    
+    #txtHome div #descri{
+          font-size: 18px;
+          margin: 10px;
+    }
+    
+    #txtHome div button{
+       border-radius: 20px;
+       padding: 5px 12px;
+       font-size: 15px;
+       color: var(--cor2);
+       background-color: var(--cor1);
+       border: 1px solid transparent;
+       margin: 10px;
+       cursor: pointer;
+    }
+    
+    #txtHome div button:hover{
+       background-color: transparent;
+       border: 1px solid var(--cor1);
+       color: var(--cor1);
+       transition: all 500ms;
+    }
+    
+    
+    
+    
+    
+    
+    /*---------------- PROJETOS -----------------*/
+    
+    #conteudoProjetos{
+           width: 90%;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           display: none;
+    }
+    
+    #conteudoProjetos #p1{
+          width: 55%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: column;
+          padding: 50px;
+    }
+    
+    #conteudoProjetos #p1 h1{
+       color: var(--cor1);
+       margin-bottom: 10px;
+    }
+    
+    #conteudoProjetos #p1 p{
+       width: 60%;
+       font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #conteudoProjetos #p2{
+         width: 35%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+    
+    #conteudoProjetos #p2 #area1, #area3{
+        width: 100%;
+        margin: 10px;
+    }
+    
+    #conteudoProjetos #p2 #area1 h1, #area3 h1{
+           color: var(--cor1);
+           font-size: 45px;
+    }
+    
+    #conteudoProjetos #p2 #area1 h1:hover, #area3 h1:hover{
+       color: var(--cor3);
+       transform: scale(1.1);
+       transition: all 400ms;
+       cursor: pointer;
+    }
+    
+    
+    
+    
+    #conteudoProjetos #p2 #area2, #area4{
+       width: 100%;
+       margin: 10px;
+       text-align: center;
+    }
+    
+    #conteudoProjetos #p2 #area2 h1, #area4 h1{
+       color: var(--cor1);
+       font-size: 45px;
+    }
+    
+    #conteudoProjetos #p2 #area2 h1:hover, #area4 h1:hover{
+       color: var(--cor3);
+       transform: scale(1.1);
+       transition: all 400ms;
+       cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------- CONTATO -----------------*/
+    
+    #conteudoContato{
+     width: 100%;
+     height: 100vh;
+     display: none;
+    }
+    
+    #conteudoContato h1{
+       width: 600px;
+       margin: 0 auto;
+       text-align: center;
+       font-size: 40px;
+       color: var(--cor2);
+       position: absolute;
+       top: 25px;
+       z-index: 4;
+    }
+    
+    #conteudoContato h1 span{
+       color: var(--cor1);
+    }
+    
+    #conteudoContato h2{
+       width: 600px;
+       text-align: center;
+       font-size: 65px;
+       color: var(--cor3);
+       position: absolute;
+       top: 10px;
+       z-index: 3;
+    }
+    
+    
+    #contatosPai{
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+    
+    
+    #linksUteis{
+          width: 45%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+    }
+    
+    #linksUteis h3{
+       color: var(--cor1);
+       font-size: 25px;
+       margin-bottom: 3px;
+    }
+    
+    
+    #linksUteis div p{
+       margin: 10px;
+       font-size: 13px;
+    }
+    
+    #linksUteis div i{
+       color: var(--cor1);
+       font-size: 22px;
+       margin: 5px;
+    }
+    
+    #linksUteis div i:hover{
+       color: var(--cor3);
+       transition: all 400ms;
+    }
+    
+    #linksUteis a{
+       text-decoration: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    #formContato{
+         width: 55%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+    }
+    
+    form input {
+          border: 1px solid transparent;
+          border-radius: 10px;
+          padding: 5px;
+          width: 50%;
+          margin: 5px;
+          background-color: var(--cor3);
+          color: var(--cor1);
+    }
+    
+    form textarea {
+       border: 1px solid transparent;
+       border-radius: 10px;
+       height: 100px;
+       padding: 5px;
+       width: 50%;
+       margin: 5px;
+       background-color: var(--cor3);
+       color: var(--cor1);
+    }
+    
+    form #btnForm{
+         color: white;
+         background-color: var(--cor1);
+         padding: 3px 8px;
+         width: 20%;
+         cursor: pointer;
+    }
+    
+    form #btnForm:hover{
+       color: var(--cor1);
+       border: 1px solid var(--cor1);
+       background-color: transparent;
+       transition: all 500ms;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*----------------------- PROJETOS IMAGENS -------------------*/
+    
+    .back{
+       position: fixed;
+       top: 20px;
+       left: 30px;
+       font-size: 25px;
+       color: var(--cor2);
+       cursor: pointer;
+    }
+    
+    .back:hover{
+       color: var(--cor1);
+    }
+    
+    
+    
+    #fotos01{
+           height: 100vh;
+           padding: 50px;
+           text-align: center;
+           display: none;
+    }
+    
+    #fotos01 h1{
+        color: var(--cor1);
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    #fotos01 div{
+       padding: 20px;
+       margin: 0 auto;
+       width: 80%;
+       text-align: center;
+       height: 450px;
+       overflow: auto;
+    }
+    
+    #fotos01 p img{
+       width: 200px;
+       margin: 10px;
+       transition: all 1s;
+       border-radius: 5px;
+    }
+    
+    #fotos01 p img:hover{
+       cursor: pointer;
+       width: 210px;
+       transition: all 1s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #fotos02{
+       height: 100vh;
+       padding: 50px;
+       text-align: center;
+       display: none;
+    }
+    
+    #fotos02 h1{
+       color: var(--cor1);
+       margin-bottom: 20px;
+       font-size: 18px;
+    }
+    
+    #fotos02 div{
+       padding: 20px;
+       margin: 0 auto;
+       width: 80%;
+       text-align: center;
+       height: 450px;
+       overflow: auto;
+    }
+    
+    
+    #fotos02  img{
+       width: 250px;
+       margin: 10px;
+       cursor: pointer;
+       transition: all 1s;
+    }
+    
+    #fotos02  img:hover{
+       width: 260px;
+       cursor: pointer;
+       transition: all 1s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #fotos03{
+       height: 100vh;
+       padding: 50px;
+       text-align: center;
+       display: none;
+    }
+    
+    #fotos03 h1{
+       color: var(--cor1);
+       margin-bottom: 10px;
+       font-size: 18px;
+    }
+    
+    #fotos03 div{
+       padding: 20px;
+       margin: 0 auto;
+       width: 80%;
+       text-align: center;
+       height: 450px;
+       overflow: auto;
+    }
+    
+    #fotos03 p img{
+       width: 200px;
+       margin: 10px;
+       transition: all 1s;
+       border-radius: 5px;
+    }
+    
+    #fotos03 p img:hover{
+       cursor: pointer;
+       width: 210px;
+       transition: all 1s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #fotos04{
+       height: 100vh;
+       padding: 50px;
+       text-align: center;
+       display: none;
+    }
+    
+    #fotos04 h1{
+       color: var(--cor1);
+       margin-bottom: 10px;
+       font-size: 18px;
+    }
+    
+    #fotos04 div{
+      padding: 20px;
+      text-align: center;
+    }
+    
+    
+    #fotos04 div{
+       padding: 20px;
+       margin: 0 auto;
+       width: 80%;
+       text-align: center;
+       height: 450px;
+       overflow: auto;
+    }
+    
+    #fotos04 p img{
+       width: 200px;
+       margin: 10px;
+       transition: all 1s;
+       border-radius: 5px;
+    }
+    
+    #fotos04 p img:hover{
+       cursor: pointer;
+       width: 210px;
+       transition: all 1s;
+    }
+    
+}

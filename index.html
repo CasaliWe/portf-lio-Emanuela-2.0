@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo_lg.css">
+    <link rel="stylesheet" href="estilo_md.css">
     <title>Emanuela da Rosa</title>
 </head>
 <body>
-    
      
      <div id="menu">
+           <i id="trocarCor" onclick="trocarCor()" class="fas fa-tint"></i>
            <span onclick="irParaHome()" id="home"><i class="fas fa-home"></i></span>
            <span onclick="irParaProjetos()" id="projetos"><i class="fas fa-briefcase"></i></span>
            <span onclick="irParaContato()" id="contato"><i class="fas fa-envelope"></i></span>
@@ -45,6 +47,8 @@
                 <h1>PROJETOS</h1>
                 <p>Os projetos que serão apresentados a seguir foram desenvolvidos em programas como Adobe Photoshop, Illustrator e Indesign. Desse modo, foi possível aplicar as técnicas necessárias em cada proposta, proporcionando maior liberdade na criação e composição dos elementos.</p>
             </div>
+
+            <h1 id="titleMobile">PROJETOS</h1>
 
             <div id="p2">
                  <div id="area1">
@@ -112,6 +116,40 @@
                     </form>
                  </div>
                  
+           </div>
+
+           <div id="contatoMobile">
+
+            <h1>CONTATO</h1>
+
+            <div id="linksMobile">
+                <h3>Fale comigo</h3>
+
+                <div>
+                    <p><i class="fas fa-id-card"></i> NOME: Emanuela da Rosa</p>
+                    <p><i class="fas fa-home"></i> CIDADE: Passo Fundo, RS</p>
+                    <p><i class="fas fa-envelope"></i> E-MAIL: emanuelasdrds@hotmail.com</p>
+                </div>
+
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5554991335430&text=Ol%C3%A1%2C%20preciso%20de%20uma%20Designer!"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/mannu.psd/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/emanuela-da-rosa-810897173"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <form action="https://api.staticforms.xyz/submit" method="post">
+     
+                <input type="hidden" name="accessKey" value="4398c799-237d-488f-9644-44b5616fb180">
+                      <input type="text" name="name" placeholder="Nome"> <br>
+                      <input type="email" name="email" placeholder="Email"> <br>
+                      <input type="text" name="phone" placeholder="Celular"> <br>
+                      <textarea name="message" placeholder="Assunto"></textarea> <br>
+                      <input type="submit" value="Enviar" id="btnFormMobile">
+          
+                <input type="hidden" name="redirectTo" value="https://portfolioemanuela.netlify.app/">
+           
+            </form>
            </div>
 
      </div>
